@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <style>
+        .inner{
+            width: 1370px;
+            height: 520px;
+            margin: auto;
+            background: #b6adad;
+            border: 1px solid rgb(19, 18, 18);
+        }
+        .col{
+            width: 23%;
+            margin: 1%;
+            float: left;
+            text-align: center;
+            background: #666;
+        }
+        .col img{
+            width: 100%;
+        }
+        .clear{
+            clear: both;
+        }
+
+        @media only screen and (min-width: 200px) and (max-width: 567px){
+            .inner{
+                width: 100%;
+            }
+            .col{
+                width: 96%;
+                margin: 2%;
+            }
+        }
+        @media only screen and (min-width: 568px) and (max-width: 992px){
+            .inner{
+                width: 100%;
+            }
+            .col{
+                width: 48%;
+                margin: 1%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="inner">
+        <div class="col"> 
+            <img src="star.jpg" alt="#star image...">
+            <h3>Star</h3>
+        </div>
+        <div class="col">
+            <img src="images.jpg" alt="#images image....">
+            <h3>Gautama</h3>
+        </div>
+        <div class="col">
+            <img src="golden.jpg" alt="#golden image....">
+            <h3>Golden</h3>
+        </div>
+        <div class="col">
+            <img src="owl.jpg" alt="#owl image....">
+            <h3>Heart</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
